@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Data360 Prototype Results</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background: #f7f9fc; color: #101828; }
+    h1 { color: #123; }
+    .card { background: white; padding: 16px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 16px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d7dde5; padding: 8px; text-align: left; }
+    th { background: #eef3f8; }
+    .risk-high { color: #b42318; font-weight: bold; }
+    .risk-medium { color: #b54708; font-weight: bold; }
+    .risk-low { color: #027a48; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Data360 Prototype Results</h1>
+  <div class="card">
+    <p>Generated from the local harmonized customer pipeline.</p>
+    <p><strong>Customers:</strong> 6</p>
+  </div>
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Risk</th>
+          <th>Open Tickets</th>
+          <th>Plan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Maria Gonzales</td><td>Nimbus Logistics</td><td class="risk-high">high</td><td>1</td><td>Enterprise</td></tr><tr><td>David Chen</td><td>Harbor Freight Co</td><td class="risk-low">low</td><td>0</td><td>Growth</td></tr><tr><td>Priya Natarajan</td><td>BrightPath Retail</td><td class="risk-high">high</td><td>2</td><td>Enterprise</td></tr><tr><td>Tom O'Malley</td><td>Westridge Manufacturing</td><td class="risk-high">high</td><td>1</td><td>Growth</td></tr><tr><td>Fatima Al-Sayed</td><td>Cedar Cove Foods</td><td class="risk-low">low</td><td>0</td><td>Enterprise</td></tr><tr><td>James Whitfield</td><td>Bracken Partners</td><td class="risk-low">low</td><td>1</td><td>Starter</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card">
+    <h2>Customer Details</h2>
+    <div class="card"><h3>Maria Gonzales (Nimbus Logistics)</h3><p><strong>Email:</strong> maria.gonzales@nimbuslogistics.com<br><strong>Renewal:</strong> 2026-09-15<br><strong>Risk:</strong> <span class="risk-high">high</span></p><ul><li>API rate limit errors during peak sync — open / high (opened 2026-07-10)</li></ul></div><div class="card"><h3>David Chen (Harbor Freight Co)</h3><p><strong>Email:</strong> d.chen@harborfreight-co.com<br><strong>Renewal:</strong> 2026-08-01<br><strong>Risk:</strong> <span class="risk-low">low</span></p><ul><li>Dashboard fails to load saved views — closed / low (opened 2026-06-02)</li></ul></div><div class="card"><h3>Priya Natarajan (BrightPath Retail)</h3><p><strong>Email:</strong> priya.n@brightpathretail.com<br><strong>Renewal:</strong> 2026-11-20<br><strong>Risk:</strong> <span class="risk-high">high</span></p><ul><li>Data export missing region field — open / medium (opened 2026-07-18)</li><li>Duplicate records after last sync — open / high (opened 2026-07-20)</li></ul></div><div class="card"><h3>Tom O'Malley (Westridge Manufacturing)</h3><p><strong>Email:</strong> tom.omalley@westridgemfg.com<br><strong>Renewal:</strong> 2026-07-30<br><strong>Risk:</strong> <span class="risk-high">high</span></p><ul><li>Integration token expired unexpectedly — open / high (opened 2026-07-21)</li></ul></div><div class="card"><h3>Fatima Al-Sayed (Cedar Cove Foods)</h3><p><strong>Email:</strong> fatima.alsayed@cedarcove.io<br><strong>Renewal:</strong> 2026-10-05<br><strong>Risk:</strong> <span class="risk-low">low</span></p><ul><li>Billing discrepancy on last invoice — closed / medium (opened 2026-05-14)</li></ul></div><div class="card"><h3>James Whitfield (Bracken Partners)</h3><p><strong>Email:</strong> jwhitfield@brackenpartners.com<br><strong>Renewal:</strong> 2026-08-18<br><strong>Risk:</strong> <span class="risk-low">low</span></p><ul><li>Onboarding checklist incomplete — open / low (opened 2026-07-15)</li></ul></div>
+  </div>
+</body>
+</html>

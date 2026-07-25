@@ -20,6 +20,7 @@ import os
 import sys
 
 from mcp_server import get_customer_context, list_at_risk_customers
+from skills.data360_agent_eval.run_agent_eval import run_agent_eval
 
 
 def generate_with_claude(task: str, context: dict) -> str:
@@ -63,14 +64,14 @@ def generate_with_template(task: str, context: dict) -> str:
     return "\n".join(lines)
 
 
-def run(task: str, identifier: str):
+def run_with_skill(task: str, identifier: str, output_path: str | None = None, pass_threshold: float = 0.8):
     print(f"--- ACTIVATE: '{task}' for '{identifier}' ---\n")
 
     context_json = get_customer_context(identifier)
     context = json.loads(context_json)
     if "error" in context:
         print(context["error"])
-        return
+        return {"error": context["error"]}
 
     print("Grounding context retrieved via MCP tool `get_customer_context`:")
     print(context_json)
@@ -83,6 +84,21 @@ def run(task: str, identifier: str):
 
     print("--- AGENT OUTPUT ---")
     print(output)
+
+    skill_result = run_agent_eval(
+        task,
+        identifier,
+        output_path=output_path,
+        pass_threshold=pass_threshold,
+        agent_output=output,
+    )
+    print("--- SKILL EVAL ---")
+    print(json.dumps({"verdict": skill_result["verdict"], "score": skill_result["score"], "report_path": skill_result["report_path"]}, indent=2))
+    return {"output": output, "skill_result": skill_result}
+
+
+def run(task: str, identifier: str):
+    return run_with_skill(task, identifier)
 
 
 if __name__ == "__main__":
