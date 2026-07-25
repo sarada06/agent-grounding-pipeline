@@ -50,7 +50,7 @@ Desktop) to connect to: `python3 mcp_server.py`.
 - **The eval harness is what makes trust operational** — this is the same
   golden-dataset + LLM-as-judge pattern behind the 35% accuracy / 25%
   reliability improvement seen in similar production work.
-- **What's intentionally left out**: real Data Cloud's identity resolution,
+- **What's intentionally left out**: real identity resolution,
   streaming ingestion, and consent/governance layers are far more complex
   than this demo's fuzzy-match — worth saying explicitly so it reads as
-  informed scoping, not a claim that this *is* Data Cloud.
+  informed scoping, not a claim that this *is* a Data Cloud.
