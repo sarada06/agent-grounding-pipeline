@@ -49,8 +49,7 @@ Desktop) to connect to: `python3 mcp_server.py`.
   production agent would use to ground itself in live data.
 - **The eval harness is what makes trust operational** — this is the same
   golden-dataset + LLM-as-judge pattern behind the 35% accuracy / 25%
-  reliability improvement seen in similar production work, just small enough to run
-  in front of an interviewer.
+  reliability improvement seen in similar production work.
 - **What's intentionally left out**: real Data Cloud's identity resolution,
   streaming ingestion, and consent/governance layers are far more complex
   than this demo's fuzzy-match — worth saying explicitly so it reads as
