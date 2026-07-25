@@ -1,0 +1,44 @@
+[
+  {
+    "id": "G-01",
+    "task": "Draft a proactive follow-up",
+    "identifier": "Priya Natarajan",
+    "expected_facts": ["Priya", "BrightPath Retail", "high"]
+  },
+  {
+    "id": "G-02",
+    "task": "Draft a proactive follow-up",
+    "identifier": "Maria Gonzales",
+    "expected_facts": ["Maria", "Nimbus Logistics", "API rate limit"]
+  },
+  {
+    "id": "G-03",
+    "task": "Draft a renewal risk summary",
+    "identifier": "d.chen@harborfreight-co.com",
+    "expected_facts": ["David", "Harbor Freight"]
+  },
+  {
+    "id": "G-04",
+    "task": "Draft a proactive follow-up",
+    "identifier": "Fatima Al-Sayed",
+    "expected_facts": ["Fatima", "Cedar Cove"]
+  },
+  {
+    "id": "G-05",
+    "task": "Draft an onboarding check-in",
+    "identifier": "James Whitfield",
+    "expected_facts": ["James", "Bracken Partners"]
+  },
+  {
+    "id": "G-06",
+    "task": "Draft a proactive follow-up",
+    "identifier": "Tom O'Malley",
+    "expected_facts": ["Tom", "Westridge", "Integration token"]
+  },
+  {
+    "id": "G-07",
+    "task": "Draft a proactive follow-up",
+    "identifier": "Nonexistent Customer",
+    "expected_facts": ["No unified record found"]
+  }
+]

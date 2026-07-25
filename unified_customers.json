@@ -1,0 +1,133 @@
+{
+  "unified_customers": [
+    {
+      "unified_id": "C-1001",
+      "canonical_name": "Maria Gonzales",
+      "canonical_email": "maria.gonzales@nimbuslogistics.com",
+      "company": "Nimbus Logistics",
+      "plan_tier": "Enterprise",
+      "renewal_date": "2026-09-15",
+      "tickets": [
+        {
+          "ticket_id": "T-4001",
+          "issue": "API rate limit errors during peak sync",
+          "status": "open",
+          "severity": "high",
+          "opened_date": "2026-07-10",
+          "source_name_variant": "Maria Gonzalez"
+        }
+      ],
+      "risk_signal": "high",
+      "open_ticket_count": 1
+    },
+    {
+      "unified_id": "C-1002",
+      "canonical_name": "David Chen",
+      "canonical_email": "d.chen@harborfreight-co.com",
+      "company": "Harbor Freight Co",
+      "plan_tier": "Growth",
+      "renewal_date": "2026-08-01",
+      "tickets": [
+        {
+          "ticket_id": "T-4002",
+          "issue": "Dashboard fails to load saved views",
+          "status": "closed",
+          "severity": "low",
+          "opened_date": "2026-06-02",
+          "source_name_variant": "D. Chen"
+        }
+      ],
+      "risk_signal": "low",
+      "open_ticket_count": 0
+    },
+    {
+      "unified_id": "C-1003",
+      "canonical_name": "Priya Natarajan",
+      "canonical_email": "priya.n@brightpathretail.com",
+      "company": "BrightPath Retail",
+      "plan_tier": "Enterprise",
+      "renewal_date": "2026-11-20",
+      "tickets": [
+        {
+          "ticket_id": "T-4003",
+          "issue": "Data export missing region field",
+          "status": "open",
+          "severity": "medium",
+          "opened_date": "2026-07-18",
+          "source_name_variant": "Priya N."
+        },
+        {
+          "ticket_id": "T-4004",
+          "issue": "Duplicate records after last sync",
+          "status": "open",
+          "severity": "high",
+          "opened_date": "2026-07-20",
+          "source_name_variant": "Priya Natarajan"
+        }
+      ],
+      "risk_signal": "high",
+      "open_ticket_count": 2
+    },
+    {
+      "unified_id": "C-1004",
+      "canonical_name": "Tom O'Malley",
+      "canonical_email": "tom.omalley@westridgemfg.com",
+      "company": "Westridge Manufacturing",
+      "plan_tier": "Growth",
+      "renewal_date": "2026-07-30",
+      "tickets": [
+        {
+          "ticket_id": "T-4007",
+          "issue": "Integration token expired unexpectedly",
+          "status": "open",
+          "severity": "high",
+          "opened_date": "2026-07-21",
+          "source_name_variant": "Tom Omalley"
+        }
+      ],
+      "risk_signal": "high",
+      "open_ticket_count": 1
+    },
+    {
+      "unified_id": "C-1005",
+      "canonical_name": "Fatima Al-Sayed",
+      "canonical_email": "fatima.alsayed@cedarcove.io",
+      "company": "Cedar Cove Foods",
+      "plan_tier": "Enterprise",
+      "renewal_date": "2026-10-05",
+      "tickets": [
+        {
+          "ticket_id": "T-4005",
+          "issue": "Billing discrepancy on last invoice",
+          "status": "closed",
+          "severity": "medium",
+          "opened_date": "2026-05-14",
+          "source_name_variant": "Fatima Alsayed"
+        }
+      ],
+      "risk_signal": "low",
+      "open_ticket_count": 0
+    },
+    {
+      "unified_id": "C-1006",
+      "canonical_name": "James Whitfield",
+      "canonical_email": "jwhitfield@brackenpartners.com",
+      "company": "Bracken Partners",
+      "plan_tier": "Starter",
+      "renewal_date": "2026-08-18",
+      "tickets": [
+        {
+          "ticket_id": "T-4006",
+          "issue": "Onboarding checklist incomplete",
+          "status": "open",
+          "severity": "low",
+          "opened_date": "2026-07-15",
+          "source_name_variant": "James Whitfield"
+        }
+      ],
+      "risk_signal": "low",
+      "open_ticket_count": 1
+    }
+  ],
+  "unmatched_tickets": []
+}

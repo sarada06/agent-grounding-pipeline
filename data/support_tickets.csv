@@ -1,0 +1,8 @@
+ticket_id,customer_name,customer_email,issue,status,severity,opened_date
+T-4001,Maria Gonzalez,maria.gonzales@nimbuslogistics.com,API rate limit errors during peak sync,open,high,2026-07-10
+T-4002,D. Chen,d.chen@harborfreight-co.com,Dashboard fails to load saved views,closed,low,2026-06-02
+T-4003,Priya N.,priya.n@brightpathretail.com,Data export missing region field,open,medium,2026-07-18
+T-4004,Priya Natarajan,priya.n@brightpathretail.com,Duplicate records after last sync,open,high,2026-07-20
+T-4005,Fatima Alsayed,fatima.alsayed@cedarcove.io,Billing discrepancy on last invoice,closed,medium,2026-05-14
+T-4006,James Whitfield,jwhitfield@brackenpartners.com,Onboarding checklist incomplete,open,low,2026-07-15
+T-4007,Tom Omalley,tom.omalley@westridgemfg.com,Integration token expired unexpectedly,open,high,2026-07-21
