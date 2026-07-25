@@ -2,7 +2,7 @@
 Unify -> Activate
 ------------------
 Exposes the harmonized customer model over MCP so any agent — this demo's
-agent, Claude Code, or a real Data 360 / Agentforce agent — can ground
+agent, Claude Code, or a production agent — can ground
 itself in unified data through a standard tool call instead of a
 hard-coded context blob.
 
@@ -15,7 +15,7 @@ from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 
 DATA_PATH = Path(__file__).parent / "unified_customers.json"
-mcp = FastMCP("data360-prototype")
+mcp = FastMCP("agent-grounding-pipeline")
 
 
 def _load():

@@ -1,6 +1,6 @@
-# Data 360 Prototype — Ingest → Harmonize → Unify → Activate → Evaluate
+# Agent Grounding Pipeline — Ingest → Harmonize → Unify → Activate → Evaluate
 
-A small, runnable analog of Catalogen, built in Salesforce's own Data Cloud
+A small, runnable pipeline exploring how to ground an AI agent in trustworthy, unified data
 
 ## Why this exists
 
@@ -15,14 +15,14 @@ pipeline that showcases how the ingestion to activation works with evals in plac
 | **Harmonize** | `harmonize.py` | Maps both sources onto one common schema. |
 | **Unify** | `harmonize.py` | Resolves identity across sources (exact email match, fuzzy-name fallback for typos like "Gonzalez" vs "Gonzales") into `unified_customers.json`. |
 | **Activate** | `mcp_server.py` + `agent.py` | Exposes the unified model as MCP tools (`get_customer_context`, `list_at_risk_customers`); an agent calls the tool to ground itself before drafting output — never a hard-coded context blob. |
-| **Evaluate** | `eval/` + `skills/data360_agent_eval/` | The agent can now invoke an evaluation skill after generating an answer, score the output against expected facts, and write an HTML report with a PASS/REVIEW verdict. |
+| **Evaluate** | `eval/` + `skills/agent_eval/` | The agent can now invoke an evaluation skill after generating an answer, score the output against expected facts, and write an HTML report with a PASS/REVIEW verdict. |
 
 ## Run it
 
 ```bash
 .\.venv\Scripts\python.exe harmonize.py                 # ingest -> harmonize -> unify
 .\.venv\Scripts\python.exe agent.py "Draft a follow-up" "Priya Natarajan"   # activate + evaluate
-.\.venv\Scripts\python.exe skills/data360_agent_eval/run_agent_eval.py "recommend next steps for Maria" "Maria Gonzales"   # run the skill directly
+.\.venv\Scripts\python.exe skills/agent_eval/run_agent_eval.py "recommend next steps for Maria" "Maria Gonzales"   # run the skill directly
 .\.venv\Scripts\python.exe eval/eval_harness.py         # evaluate the golden dataset
 ```
 
@@ -45,11 +45,11 @@ Desktop) to connect to: `python3 mcp_server.py`.
   "Maria Gonzales" (CRM) vs "Maria Gonzalez" (ticket) resolving to one
   record. This is the unglamorous 80% of any unification problem.
 - **The MCP layer is the point, not a technicality** — the agent never sees
-  a hard-coded blob; it calls a tool, the same pattern a real Data 360 /
-  Agentforce agent would use to ground itself in live data.
+  a hard-coded blob; it calls a tool, the same pattern any
+  production agent would use to ground itself in live data.
 - **The eval harness is what makes trust operational** — this is the same
   golden-dataset + LLM-as-judge pattern behind the 35% accuracy / 25%
-  reliability improvement in the Catalogen work, just small enough to run
+  reliability improvement seen in similar production work, just small enough to run
   in front of an interviewer.
 - **What's intentionally left out**: real Data Cloud's identity resolution,
   streaming ingestion, and consent/governance layers are far more complex

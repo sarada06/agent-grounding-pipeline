@@ -41,7 +41,7 @@ html = f"""<!DOCTYPE html>
 <html lang=\"en\">
 <head>
   <meta charset=\"utf-8\">
-  <title>Data360 Prototype Results</title>
+  <title>Agent Grounding Pipeline Results</title>
   <style>
     body {{ font-family: Arial, sans-serif; margin: 24px; background: #f7f9fc; color: #101828; }}
     h1 {{ color: #123; }}
@@ -55,7 +55,7 @@ html = f"""<!DOCTYPE html>
   </style>
 </head>
 <body>
-  <h1>Data360 Prototype Results</h1>
+  <h1>Agent Grounding Pipeline Results</h1>
   <div class=\"card\">
     <p>Generated from the local harmonized customer pipeline.</p>
     <p><strong>Customers:</strong> {len(customers)}</p>

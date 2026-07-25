@@ -2,7 +2,7 @@ import unittest
 from pathlib import Path
 
 from agent import run_with_skill
-from skills.data360_agent_eval.run_agent_eval import build_html_report, evaluate_output
+from skills.agent_eval.run_agent_eval import build_html_report, evaluate_output
 
 
 class AgentEvalSkillTests(unittest.TestCase):

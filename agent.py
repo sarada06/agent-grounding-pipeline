@@ -1,7 +1,7 @@
 """
 Activate
 --------
-A minimal agent that demonstrates the pattern Data 360 sells: an agent
+A minimal agent that demonstrates a common agent-grounding pattern: an agent
 grounding itself in unified data via a tool call, not a hard-coded blob,
 before acting on a task.
 
@@ -20,7 +20,7 @@ import os
 import sys
 
 from mcp_server import get_customer_context, list_at_risk_customers
-from skills.data360_agent_eval.run_agent_eval import run_agent_eval
+from skills.agent_eval.run_agent_eval import run_agent_eval
 
 
 def generate_with_claude(task: str, context: dict) -> str:
